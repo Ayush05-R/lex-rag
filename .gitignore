@@ -1,0 +1,59 @@
+# ── Python ──
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ── Distribution / packaging ──
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ── uv ──
+# NOTE: do NOT ignore uv.lock — that gets committed
+
+# ── Environment variables / secrets ──
+.env
+.env.local
+.env.*.local
+
+# ── Testing ──
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Linting / type-checking caches ──
+.mypy_cache/
+.ruff_cache/
+
+# ── IDE ──
+.vscode/
+.idea/
+
+# ── OS junk ──
+.DS_Store
+Thumbs.db
+
+# ── Logs ──
+*.log
+logs/
+
+# ── RAG/ML-specific (relevant once you add data + models) ──
+data/raw/
+data/processed/
+*.faiss
+*.index
+*.pkl
+*.pt
+*.pth
+embeddings/
+vector_store/
+chroma_db/
+*.db-journal
+
+# ── Jupyter (if you use notebooks for experimentation) ──
+.ipynb_checkpoints/
